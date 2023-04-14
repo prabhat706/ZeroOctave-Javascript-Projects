@@ -1,0 +1,86 @@
+/* @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap'); */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Images/snake.JPG") !important;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+.snake-board {
+  position: relative;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+.snake-board .preview {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background-color: gray;
+}
+
+.snake-board .score {
+  font-size: 200%;
+  color: blue;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+.snake-board button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 30%;
+  height: 10%;
+  margin-left: -15%;
+  margin-top: -5%;
+  font-size: 100%;
+  background-color: lightgreen;
+  border: 1px solid darkgreen;
+  border-radius: 50px;
+}
+
+.snake-board button:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.snake-board table {
+  border-collapse: collapse;
+}
+
+.snake-board td {
+  width: 20px;
+  height: 20px;
+  border: 0;
+}
+
+.snake-board .col {
+  background-color: aqua;
+}
+
+.snake-board .snake {
+  background-color: blue;
+}
+
+.snake-board .fruit {
+  background-color: red;
+}
